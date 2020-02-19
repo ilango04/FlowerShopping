@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="Styles/Style.css" />
+    <title>Payment Page</title>
+    <script src="Scripts/Validator.js"></script>
+</head>
+<body>
+    <form id="form" method="get">
+        <div>
+            <h1 class="firstHeader">FLOWER SHOP ONLINE</h1>
+        </div>
+        <div class="firstStyle"></div>
+        <br />
+        <h2 class="secondHeader">Secure Payment Page</h2>
+        <table>
+            <tr>
+                <td><img id="firstImage" src="images/rose.png" /></td>
+                <td><label id="firstEdit"><b>Select Language</b></label></td>
+                <td>
+                    <select id="selectList" name="languageList">
+                        <option value="English">English</option>
+                        <option value="Tamil">Tamil</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Malayalam">Malayalam</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><label id="firstFont">Payment Method</label></td>
+                <td><label id="firstColumn"><b>Visa</b></label></td>
+            </tr
+            <tr>
+                <td><label id="secondFont">Description</label></td>
+                <td><label id="secondColumn"><b>Item ordered</b></label></td>
+            </tr>
+            <tr>
+                <td><label id="thirdFont">Amount</label></td>
+                <td><label id="thirdColumn"><b>&pound;100.00</b></label></td>
+            </tr>
+        </table>
+        <div>
+            <img id="secondImage" src="images/logo.png" />
+        </div>
+        <div class="secondStyle">
+            <label class="secondEdit">Card details</label><img id="question" src="images/questionmark.png" />
+        </div>
+        <table class="tableFirstStyle">
+            <tr>
+                <td><label>You must fill in fields marked with *</label></td>
+            </tr>
+            <tr>
+                <td><label>* Card number</label></td>
+                <td><input type="number" id="txtCard"  /></td>
+            </tr>
+            <br>
+            <tr><td colspan="2"><span id="errorCard"  class="errorMessage" ></span></td></tr>
+            <tr>
+                <td><label>* <u>Security Code</u></label></td>
+                <td><input type="password" id="txtCode" maxlength="3" /></td></tr>
+                <tr><td colspan="2"><span id="errorCode"  class="errorMessage" ></span></td></tr>           
+                <tr>
+                <td><label>* Expiry date</label></td>
+                <td>
+                    <select class="monthSelect" id="txtMonth">
+                        <option value=""></option>
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="July">July</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                    </select></td>
+                <td>
+                    <select class="yearSelect" id="txtYear">
+                        <option value=""></option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                    </select></td></tr>
+                <tr><td colspan="2"><span  id="errorDate"  class="errorMessage"></span>
+                </td> 
+            </tr>
+            <tr>
+                <td><label>* Cardholder's name</label></td>
+                <td><input type="text" id="txtName" maxlength="15"/></td></tr>
+                <tr><td colspan="2">
+                <span  id="errorName"  class="errorMessage"></span></td>
+            </tr>
+        </table>
+        <div id="secondHeight">
+        </div>
+        <div class="thirdStyle">
+            <label class="thirdEdit">Cardholder details</label><img id="question" src="images/questionmark.png" />
+        </div>
+        <table class="tableSecondStyle">
+            <tr>
+                <td><label>You must fill in fields marked with *</label></td>
+            </tr>
+            <tr>
+                <td><label>* Address 1</label></td>
+                <td><input type="text" id="txtValidAddress" maxlength="60" /></td></tr><tr><td colspan="2">
+                <span  id="errorAddress"  class="errorMessage"></span></td>
+            </tr>
+            <tr>
+                <td><label>&nbsp; Address 2</label></td>
+                <td><input type="text" id="txtAddress"/></td>
+            </tr>
+            <tr>
+                <td><label>&nbsp; Address 3</label></td>
+                <td><input type="text" id="txtAddress" /></td>
+            </tr>
+            <tr>
+                <td><label>* Town/City</label></td>
+                <td><input type="text" id="txtTown" maxlength="15" /></td></tr><tr><td colspan="2">
+                <span  id="errorTown"  class="errorMessage"></span></td>
+            </tr>
+            <tr>
+                <td><label>&nbsp; Region</label></td>
+                <td><input type="text" id="txtRegion"/></td>
+            </tr>
+            <tr>
+                <td><label>&nbsp;* Postcode/Zip code</label></td>
+                <td><input type="number" id="txtPincode" />
+                </td><tr><td colspan="2"><span  id="errorPincode"  class="errorMessage"></span></td>
+            </tr>
+            <tr>
+                <td><label>* Country</label></td>
+                <td>
+                    <select class="countrySelect">
+                        <option value="UK">United Kingdom</option>
+                        <option value="INDIA">India</option>
+                        <option value="AUS">Australia</option>
+                        <option value="CAN">Canada</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>&nbsp;  Telephone</label></td>
+                <td><input type="number" id="txtPhone" /></td></tr><tr><td colspan="2">
+                <span  id="errorPhone"  class="errorMessage"></span>
+                	</td>
+            </tr>
+            <tr>
+                <td><label>&nbsp; Fax</label></td>
+                <td><input type="number" id="txtFax" /></td>
+                </tr><tr><td colspan="2">
+                <span  id="errorFax"  class="errorMessage"></span></td>
+            </tr>
+            <tr>
+                <td><label>* Email address</label></td>
+                <td><input type="email" id="txtEmail" maxlength="20" /></td>
+                </tr><tr><td  colspan="2"><span  id="errorEmail"  class="errorMessage"></span></td>
+            </tr>
+        </table>
+        <div id="secondHeight">
+        </div>
+        <div>
+            <img id="firstLogo" src="images/restart.png" />
+        </div>
+        <div id="txtRestart">
+            <button type="reset" id="btnStart">START AGAIN</button>
+        </div>
+        <div id="txtPayment">
+            <button type="button" id="btnStart" value="submit" onclick="SubmitOperation()" onclose="reset">MAKE PAYMENT</button>
+        </div>
+        <div id="secondLogo">
+            <img src="images/secondlogo.png" />
+        </div>
+        <div id="cancelStyle">
+            <img id="cancelLogo" src="images/cancel.png" />
+        </div>
+        <div id="txtCancel">
+            <button  id="btnStart" onclick="CancelOperation()">CANCEL</button>
+        </div>
+        <div id="lineColor">
+        </div>
+        <br />
+        <div id="txtStyle">
+            <label>Refunds and Returns</label><br /> <br />
+            <label>For more information visit our&nbsp;</label><a href="https://www.floweraura.com/aboutus">Refunds and Returns Policy</a>
+            <br /> <br />
+            <img id="payLogo" src="images/pay.png" />
+        </div>
+        <div id="txtHelp">
+            <label >For help with your payment visit the</label><a href="https://www.floweraura.com/aboutus">WorldPay Help</a>
+        </div>
+        <footer id="txtFooter"><center><h2 id="center">Thank you for shopping at Flowershop.Have a nice day</h2></center></footer>
+            </form>  
+</body>
+</html>

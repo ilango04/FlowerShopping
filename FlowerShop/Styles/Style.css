@@ -1,0 +1,182 @@
+.firstHeader {
+    margin-left: 80px;
+    font-family: Arial;
+    color: #0f228c;
+}
+#center {
+    font-family: Calibri;
+    word-spacing: normal;
+    padding: 18px 9px 10px 100px;
+    color: #0f228c;
+}
+#question
+{
+    margin-left:520px;
+    margin-top:-15px;
+    margin-right:0px;
+    margin-bottom:20px;
+    width:20px;
+    height:20px;
+}
+.secondHeader {
+    color: #0f228c;
+    text-align: center;
+    font-family: Arial;
+}
+.firstStyle {
+    background-color: yellowgreen;
+    height:25px;
+}
+#firstImage {
+    height:100px;
+    width:80px;
+    margin-top:-30px;
+    margin-left: 30px;
+}
+#secondImage
+{
+    height:80px;
+    width:80px;
+    margin-top:-80px;
+    margin-left:1000px;
+}
+#firstEdit{
+    margin-left: 448px;
+    font-family:Arial;
+}
+#selectList
+{
+    margin-left:10px;
+    width:130px;
+    border-color:aqua;
+}
+#firstFont, #secondFont, #thirdFont {
+    margin-left: 565px;
+    font-family: Arial;
+}
+
+#firstColumn, #secondColumn, #thirdColumn {
+    margin-left: 10px;
+    font-family: Arial;
+}
+.secondStyle,.thirdStyle{
+    margin-left:560px;
+    margin-right:257px;
+    background-color: yellowgreen;
+    height: 22px;
+}
+#firstHeight, #secondHeight {
+    margin-left: 560px;
+    margin-right: 257px;
+    background-color: #f2bb57;
+    height: 22px;
+}
+.tableFirstStyle
+{
+    margin-top:-20px;
+}
+.tableFirstStyle,.tableSecondStyle {
+    background-color: #f2bb57;
+    margin-left: 560px;
+    width: 516px;
+}
+#firstLogo{
+    height: 30px;
+    width: 30px;
+    margin-left: 560px;
+    margin-bottom:-10px;
+}
+#cancelStyle {
+    margin-top: 3px;
+    margin-left: 563px;
+}
+#cancelLogo
+{
+    height: 22px;
+    width: 22px;
+}
+#payLogo {
+    margin-left:-12px;
+    height: 42px;
+    width: 110px;
+}
+#secondLogo {
+    margin-top: -17px;
+    margin-left: 1072px;
+    height: 35px;
+    width: 35px;
+}
+
+#txtCard,#txtCode,#txtName,#txtRegion,#txtPincode,#txtPhone,#txtFax,#txtEmail,#txtTown,#txtValidAddress
+{
+    border-color:aqua;
+    width:250px;
+}
+.monthSelect
+{
+    width:60px;
+    border-color:aqua;
+}
+.yearSelect
+{
+    width:60px;
+    margin-left:-180px;
+    border-color:aqua;
+}
+.countrySelect
+{
+    border-color:aqua;
+}
+#txtRestart {
+    margin-left: 600px;
+    margin-top: -20px;
+}
+#txtPayment{
+    margin-left: 940px;
+    margin-top:-15px;
+}
+#txtCancel {
+    margin-left: 600px;
+    margin-top: -25px;
+}
+#lineColor {
+    background-color: yellowgreen;
+    height: 3px;
+    margin-top:10px;
+    margin-left: 560px;
+    width: 534px;
+}
+#txtStyle {
+    margin-left: 570px;
+}
+#txtHelp
+{
+    margin-top:-39px;
+    margin-left:720px;
+}
+#txtFooter
+{
+    margin-top:17px;
+    background-color:yellowgreen;
+    height:60px;
+}
+#btnStart {
+    border: none;
+    background-color: none;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial;
+    color:indigo;
+}
+#txtAddress,#txtValidAddress
+{
+    border-color:aqua;
+}
+.errorMessage
+{
+    color:red;
+}
+#errorCard,#errorCode,#errorDate,#errorName,#errorAddress,#errorTown,#errorPincode,#errorPhone,#errorFax,#errorEmail
+{
+    margin-left:250px;
+}
